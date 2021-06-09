@@ -1,0 +1,81 @@
+body {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+}
+.conteiner {
+  max-width: 1140px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 80px;
+}
+.logo-link {
+  display: inline-block;
+  padding-right: 50px;
+}
+.nav-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+.nav-menu-item {
+  margin-right: 30px;
+}
+.nav-menu-link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+}
+.film-data {
+  display: block;
+  font-size: 24px;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 38px;
+}
+.film-description {
+  max-width: 432px;
+  font-size: 16px;
+  line-height: 140%;
+  margin-top: 40px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.button {
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button-icon,
+.button-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.button-text {
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 10px;
+}
+.button-primary {
+  color: #8d0019;
+  background-color: #fff;
+}
+.button-link {
+  color: #fff;
+}
+.button-group {
+  margin-top: 70px;
+}
+.venom {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.blood {
+  background: url(../img/blood.png) no-repeat top right,
+    #14131a url(../img/background.jpg) no-repeat center center / 100%;
+}
