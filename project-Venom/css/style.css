@@ -4,7 +4,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 .conteiner {
-  max-width: 1140px;
+  /*max-width: 1140px;*/
+  width: 90%;
   margin: auto;
 }
 .header {
@@ -35,14 +36,17 @@ body {
   font-size: 24px;
   line-height: 28px;
   color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 38px;
+  margin-bottom: 3%;
 }
 .film-description {
   max-width: 432px;
   font-size: 16px;
   line-height: 140%;
-  margin-top: 40px;
+  margin-top: 3%;
   color: rgba(255, 255, 255, 0.8);
+}
+.film-logo {
+  width: 80%;
 }
 .button {
   padding: 15px 30px;
@@ -69,15 +73,17 @@ body {
   color: #fff;
 }
 .button-group {
-  margin-top: 70px;
+  margin-top: 5%;
 }
 .venom {
   position: absolute;
+  max-width: 728px;
+  width: 40%;
   top: 0;
   right: 0;
 }
 .blood {
-  background: url(../img/blood.png) no-repeat top right,
+  background: url(../img/blood.png) no-repeat top right / 70%,
     #14131a url(../img/background.jpg) no-repeat center center / 100%;
 }
 .pimary-bg {
@@ -141,6 +147,7 @@ body {
   justify-content: center;
 }
 .trailer .play {
+  background-color: rgba(255, 255, 255, 0.8);
   margin-top: 33px;
   width: 45px;
   height: 45px;
@@ -149,7 +156,7 @@ body {
   cursor: pointer;
 }
 .trailer .play-icon {
-  transform: translate(1px, 2px);
+  transform: translate(16px, 15px);
 }
 .poster-wrapper {
   display: flex;
@@ -167,4 +174,56 @@ body {
 .poster-wrapper .list {
   margin: 0;
   margin-bottom: 20px;
+}
+.menu-button {
+  display: none;
+}
+@media (max-width: 992px) {
+  .content {
+    flex-direction: column;
+  }
+  .col {
+    margin-bottom: 10%;
+  }
+}
+@media (max-width: 768px) {
+  .blood {
+    background: #14131a;
+  }
+  .venom {
+    top: 22%;
+  }
+}
+@media (max-width: 576px) {
+  .nav-menu {
+    display: none;
+  }
+  .nav {
+    margin-left: auto;
+  }
+  .menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    background-color: #14131a;
+    color: rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+  }
+  .menu-button-text {
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .button-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .film-text {
+    text-align: center;
+  }
 }

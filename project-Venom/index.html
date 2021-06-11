@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
+  <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="blood">
@@ -17,6 +18,10 @@
         <img width="46" height="71" src="img/logo.png" alt="logo" class="img-logo">
       </a>
       <nav class="nav">
+        <button class="menu-button">
+          <span class="menu-button-text">Меню</span>
+          <img src="img/menu.svg" alt="menu" class="menu-button-icon" />
+        </button>
         <ul class="nav-menu">
           <li class="nav-menu-item">
             <a href="about.html" class="nav-menu-link">о фильме</a>
@@ -43,10 +48,10 @@
       </div>
       <!-- /.film-text -->
       <div class="button-group">
-        <button class="button button-primary">
+        <a class="button button-primary" data-fancybox href="https://youtu.be/Othd8W8o3t0">
           <img width="15px" src="img/play.svg" alt="play" class="button-icon">
           <span class="button-text">смотреть трейлер</span>
-        </button>
+        </a>
         <a href="#" class="button button-link">
           <img width="15px" src="img/ticket.svg" alt="ticket" class="button-icon">
           <span class="button-text">билеты на премьеру</span>
@@ -59,5 +64,8 @@
   </div>
   <!-- /.conteiner -->
   <img src="img/venom.png" alt="venom" class="venom">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
